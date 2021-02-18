@@ -418,7 +418,12 @@ footer .address-list {
   align-items: flex-start;
 }
 
-header .address-item::before {
+.address-icon {
+  height: 12px;
+  width: 16px;
+}
+
+/* header .address-item::before {
   content: '';
   width: 10px;
   height: 10px;
@@ -427,7 +432,7 @@ header .address-item::before {
   align-items: center;
   text-align: center;
   background-color: currentColor;
-}
+} */
 
 .about.section {
   padding-top: 0;
