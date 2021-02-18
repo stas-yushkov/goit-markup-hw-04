@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goit-markup-hw-03 Web Studio (Version 2.1)</title>
+
+    <!-- Embeding fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--подключен сторонний нормалайз https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css -->
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+
+    <!-- Скрыт заголовок visually-hidden.css https://gist.github.com/luxplanjay/6f6936b1bba7afe006fa9317b07b6045 -->
+    <link rel="stylesheet" href="./css/visually-hidden.css" />
+
+    <!-- Тут файл для переменных цвета в основном... -->
+    <!-- <link rel="stylesheet" href="./css/variables.css"> -->
+
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html" lang="en" class="logo">
+            Web<span class="logo-part">Studio</span>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-link current-page">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-link">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contacts" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address-list">
+          <a href="mailto:info@devstudio.com" lang="en" class="address-item"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="address-item">+38 096 111 11 11</a>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <!--Hero section-->
+      <section class="hero">
+        <h1 class="hero-title uppercase">
+          Эффективные решения<br />для вашего бизнеса
+        </h1>
+        <button class="button">Заказать услугу</button>
+      </section>
+
+      <!--Values section-->
+      <section class="values section">
+        <div class="container">
+          <div class="wrapper">
+            <h2 class="visually-hidden">Наши ценности</h2>
+            <ul class="card-set">
+              <li class="card">
+                <h3 class="values-title uppercase">Внимание к деталям</h3>
+                <p>
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+
+              <li class="card">
+                <h3 class="values-title uppercase">Пунктуальность</h3>
+                <p>
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечёт за собой.
+                </p>
+              </li>
+
+              <li class="card">
+                <h3 class="values-title uppercase">Планирование</h3>
+                <p>
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+
+              <li class="card">
+                <h3 class="values-title uppercase">Современные технологии</h3>
+                <p>
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section class="about section">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="card-set">
+            <li class="about-card">
+              <div class="card-thumb">
+                <img
+                  class="about-image"
+                  src="./images/box-001.jpg"
+                  alt="Десктопные приложения"
+                  width="370"
+                />
+              </div>
+            </li>
+            <li class="about-card">
+              <div class="card-thumb">
+                <img
+                  class="about-image"
+                  src="./images/box-002.jpg"
+                  alt="Мобильные приложения"
+                  width="370"
+                />
+              </div>
+            </li>
+            <li class="about-card">
+              <div class="card-thumb">
+                <img
+                  class="about-image"
+                  src="./images/box-003.jpg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- TODO: Доделать BORDERs  и падингги карточкам  5885-->
+      <!-- TODO: Переклацать все элементы и подобавлять границЫ -->
+      <!-- TODO: выбрать методологию названий классов и поменятьих в соответствии -->
+      <!-- TODO: поотделять блоки (li) одной пустой строкой для лучшей читаемости html -->
+      <!-- TODO: width в будущем переделать под адаптив -->
+      <!-- иконки центрировать как флексы -->
+      <!-- на ховер родителя иконка через каррент колор -->
+      <!-- outline-nonr для фокусных элементов и сместо этого тень. -->
+      <!-- для имжей в тумбах добавить видс и хейтс 100% и обжектфитКовер, а тумбам указывать высоту из макета -->
+      <!-- везде где есть width поменять на  max-width для отзывчивой верстки потом -->
+      <!-- если надо inline-block то юзай inline-flex -->
+      <!-- фон чаще всего это "имадж, норепит, кавер, центер" -->
+      <!-- Герою не нужен контейнет. только макс-видтх1600 -->
+      <!-- свг ставить через спрайт инлайн свг -->
+      <!--team section-->
+      <section class="team section">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="card-set">
+            <li class="card-set-item">
+              <a class="team-link" href="./card1.html">
+                <div class="card-thumb">
+                  <img src="./images/card-001.jpg" alt="" width="270" />
+                </div>
+                <h3 class="card-title">Игорь Демьяненко</h3>
+                <p class="card-item" lang="en">Product Designer</p>
+              </a>
+            </li>
+            <li class="card-set-item">
+              <a class="team-link" href="./card2.html">
+                <div class="card-thumb">
+                  <img src="./images/card-002.jpg" alt="" width="270" />
+                </div>
+                <h3 class="card-title">Ольга Репина</h3>
+                <p class="card-item" lang="en">Frontend Developer</p>
+              </a>
+            </li>
+            <li class="card-set-item">
+              <a class="team-link" href="./card3.html">
+                <div class="card-thumb">
+                  <img src="./images/card-003.jpg" alt="" width="270" />
+                </div>
+                <h3 class="card-title">Николай Тарасов</h3>
+                <p class="card-item" lang="en">Marketing</p>
+              </a>
+            </li>
+            <li class="card-set-item">
+              <a class="team-link" href="./card4.html">
+                <div class="card-thumb">
+                  <img src="./images/card-004.jpg" alt="" width="270" />
+                </div>
+                <h3 class="card-title">Михаил Ермаков</h3>
+                <p class="card-item" lang="en">UI Designer</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo">
+          Web<span class="logo-part">Studio</span>
+        </a>
+        <address id="contacts" class="address-list">
+          <a
+            href="https://goo.gl/maps/3aquBBFfu6E2QgFt6"
+            class="address-item map"
+            rel="nofollow noopener noreferrer"
+          >
+            г. Киев, пр-т Леси Украинки, 26
+          </a>
+
+          <a href="mailto:info@example.com" lang="en" class="address-item"
+            >info@example.com</a
+          >
+          <a href="tel:+380991111111" class="address-item">+38 099 111 11 11</a>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
