@@ -400,6 +400,7 @@ footer .address-list {
   letter-spacing: 0.02em;
   color: var(--primary-color);
   margin-right: 50px;
+  align-items: center;
 }
 
 .address-item:last-child {
