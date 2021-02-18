@@ -36,9 +36,11 @@
             <li class="nav-list-item">
               <a href="./index.html" class="nav-link current-page">Студия</a>
             </li>
+
             <li class="nav-list-item">
               <a href="./portfolio.html" class="nav-link">Портфолио</a>
             </li>
+
             <li class="nav-list-item">
               <a href="#contacts" class="nav-link">Контакты</a>
             </li>
@@ -53,6 +55,10 @@
       </div>
     </header>
 
+    <!-- <svg>
+      <use href="./images/not-optimized/address-envelope.svg" width="20"></use>
+    </svg> -->
+
     <main>
       <!--Hero section-->
       <section class="hero">
@@ -62,45 +68,45 @@
         <button class="button">Заказать услугу</button>
       </section>
 
-      <!--Values section-->
-      <section class="values section">
+      <!--features section-->
+      <section class="features section">
         <div class="container">
-          <div class="wrapper">
-            <h2 class="visually-hidden">Наши ценности</h2>
-            <ul class="card-set">
-              <li class="card">
-                <h3 class="values-title uppercase">Внимание к деталям</h3>
-                <p>
-                  Идейные соображения, а также начало повседневной работы по
-                  формированию позиции.
-                </p>
-              </li>
+          <!-- <div class="wrapper"> -->
+          <h2 class="visually-hidden">Наши ценности</h2>
+          <ul class="card-set">
+            <li class="card">
+              <h3 class="features-title uppercase">Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
 
-              <li class="card">
-                <h3 class="values-title uppercase">Пунктуальность</h3>
-                <p>
-                  Задача организации, в особенности же рамки и место обучения
-                  кадров влечёт за собой.
-                </p>
-              </li>
+            <li class="card">
+              <h3 class="features-title uppercase">Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечёт за собой.
+              </p>
+            </li>
 
-              <li class="card">
-                <h3 class="values-title uppercase">Планирование</h3>
-                <p>
-                  Равным образом консультация с широким активом в значительной
-                  степени обуславливает.
-                </p>
-              </li>
-
-              <li class="card">
-                <h3 class="values-title uppercase">Современные технологии</h3>
-                <p>
-                  Значимость этих проблем настолько очевидна, что реализация
-                  плановых заданий.
-                </p>
-              </li>
-            </ul>
-          </div>
+            <li class="card">
+              <h3 class="features-title uppercase">Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <!-- TODO: features у антенны width: 70px; height: 70px; фон background: #F5F4FA; width: 270px; height: 120px; соскругленными краями border-radius: 4px; -->
+            <li class="card">
+              <h3 class="features-title uppercase">Современные технологии</h3>
+              <p>
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
       </section>
       <!-- About section -->
@@ -118,6 +124,7 @@
                 />
               </div>
             </li>
+
             <li class="about-card">
               <div class="card-thumb">
                 <img
@@ -128,6 +135,7 @@
                 />
               </div>
             </li>
+
             <li class="about-card">
               <div class="card-thumb">
                 <img
@@ -142,14 +150,10 @@
         </div>
       </section>
 
-      <!-- TODO: Доделать BORDERs  и падингги карточкам  5885-->
-      <!-- TODO: Переклацать все элементы и подобавлять границЫ -->
       <!-- TODO: выбрать методологию названий классов и поменятьих в соответствии -->
-      <!-- TODO: поотделять блоки (li) одной пустой строкой для лучшей читаемости html -->
-      <!-- TODO: width в будущем переделать под адаптив -->
       <!-- иконки центрировать как флексы -->
       <!-- на ховер родителя иконка через каррент колор -->
-      <!-- outline-nonr для фокусных элементов и сместо этого тень. -->
+      <!-- outline-none для фокусных элементов и вместо этого тень. -->
       <!-- для имжей в тумбах добавить видс и хейтс 100% и обжектфитКовер, а тумбам указывать высоту из макета -->
       <!-- везде где есть width поменять на  max-width для отзывчивой верстки потом -->
       <!-- если надо inline-block то юзай inline-flex -->
@@ -170,10 +174,13 @@
                     width="270"
                   />
                 </div>
-                <h3 class="card-title">Игорь Демьяненко</h3>
-                <p class="card-item" lang="en">Product Designer</p>
+                <div class="card-content">
+                  <h3 class="card-title">Игорь Демьяненко</h3>
+                  <p class="card-item" lang="en">Product Designer</p>
+                </div>
               </a>
             </li>
+
             <li class="card-set-item">
               <a class="team-link" href="./card2.html">
                 <div class="card-thumb">
@@ -183,10 +190,13 @@
                     width="270"
                   />
                 </div>
-                <h3 class="card-title">Ольга Репина</h3>
-                <p class="card-item" lang="en">Frontend Developer</p>
+                <div class="card-content">
+                  <h3 class="card-title">Ольга Репина</h3>
+                  <p class="card-item" lang="en">Frontend Developer</p>
+                </div>
               </a>
             </li>
+
             <li class="card-set-item">
               <a class="team-link" href="./card3.html">
                 <div class="card-thumb">
@@ -196,10 +206,13 @@
                     width="270"
                   />
                 </div>
-                <h3 class="card-title">Николай Тарасов</h3>
-                <p class="card-item" lang="en">Marketing</p>
+                <div class="card-content">
+                  <h3 class="card-title">Николай Тарасов</h3>
+                  <p class="card-item" lang="en">Marketing</p>
+                </div>
               </a>
             </li>
+
             <li class="card-set-item">
               <a class="team-link" href="./card4.html">
                 <div class="card-thumb">
@@ -209,8 +222,10 @@
                     width="270"
                   />
                 </div>
-                <h3 class="card-title">Михаил Ермаков</h3>
-                <p class="card-item" lang="en">UI Designer</p>
+                <div class="card-content">
+                  <h3 class="card-title">Михаил Ермаков</h3>
+                  <p class="card-item" lang="en">UI Designer</p>
+                </div>
               </a>
             </li>
           </ul>

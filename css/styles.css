@@ -30,7 +30,8 @@ body {
 }
 
 .container {
-  width: 1200px;
+  display: flex;
+  width: 1200px; /* TODO: @width в будущем переделать под адаптив@ сделать "max-width: 1200px;" и пофиксить все что поплывет при изменении вьюпорта */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -111,7 +112,9 @@ img {
 }
 
 .card-content {
-  padding: ;
+  padding: 30px 32px;
+  /* padding-bottom: 30px; */
+  /* outline: 1px dotted tomato; */
 }
 
 /* Hero section */
@@ -231,7 +234,7 @@ header .logo-part {
   color: var(--hover-background-color);
 }
 
-.values-title {
+.features-title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -256,9 +259,17 @@ header .logo-part {
   background-color: var(--secondary-background-color);
 }
 
+.team .card-thumb {
+  max-height: 260px;
+}
+
 .card {
   background-color: var(--white-color);
-  width: 270px;
+  max-width: 270px;
+}
+
+.portfolio .container {
+  flex-direction: column;
 }
 
 .portfolio-item {
@@ -295,8 +306,12 @@ header .logo-part {
   border-right: 1px solid var(--border-color);
 }
 
+.portfolio .card-thumb {
+  max-height: 294px;
+}
+
 .team-link {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   display: block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -312,7 +327,7 @@ header .logo-part {
 } */
 
 .card-title {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 
   color: var(--secondary-color);
   font-weight: 500;
@@ -378,6 +393,7 @@ footer .address-list {
 }
 
 .address-item {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -401,9 +417,16 @@ footer .address-list {
   align-items: flex-start;
 }
 
-/* .about-image {
-  display: block;
-} */
+header .address-item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  margin-right: 1px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: currentColor;
+}
 
 .about.section {
   padding-top: 0;
@@ -421,6 +444,10 @@ footer .address-list {
 
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+}
+
+.about .card-thumb {
+  max-height: 294px;
 }
 
 .team > .container {
@@ -457,7 +484,7 @@ footer .address-list {
   outline: 1px solid teal;
 } */
 
-.values .card {
+.features .card {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
 
   margin-top: var(--card-set-gap);
