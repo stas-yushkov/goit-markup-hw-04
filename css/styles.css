@@ -38,7 +38,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  /* outline: 2px dotted tomato; */
+  outline: 2px dotted tomato;
 }
 
 header .container {
@@ -530,4 +530,26 @@ footer .address-list {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
+}
+
+.clients .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--social-link-color);
+  border-radius: 5px;
+  fill: var(--social-link-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
