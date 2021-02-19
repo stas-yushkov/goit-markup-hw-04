@@ -330,8 +330,6 @@ header .logo-part {
 }
 
 .card-title {
-  /* margin-top: 30px; */
-
   color: var(--secondary-color);
   font-weight: 500;
   font-size: 16px;
