@@ -23,6 +23,17 @@
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+/* Remove markers from lists */
+ul {
+  list-style: none;
+}
+
+/* Remove underline from urls */
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
 /* Transform text to uppercase */
 .uppercase {
   text-transform: uppercase;
@@ -680,4 +691,18 @@ header .logo-part {
   background-color: var(--white-color);
 
   /* width: 270px; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
