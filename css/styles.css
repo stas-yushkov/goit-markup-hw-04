@@ -261,6 +261,7 @@ img {
 .logo:hover,
 .logo:focus {
   outline: none;
+
   /* text-shadow: var(--button-shadow); */
 }
 
@@ -434,6 +435,7 @@ header .logo-part {
 .footer .logo:hover,
 .footer .logo:focus {
   outline: none;
+
   /* text-shadow: var(--box-shadow); */
 }
 
